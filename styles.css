@@ -1,0 +1,31 @@
+body {
+    background-color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+    color: firebrick;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.first-img {
+    height: 300px;
+    width: auto;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+ul, ol, p {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.novigator ul{
+    list-style-type: none;
+    text-align: center;
+}
