@@ -1,60 +1,88 @@
-body {
-    background-color: bisque;
-    font-family:Arial, Helvetica, sans-serif;
-    color: firebrick;
-    padding: 0;
-    margin: 24px;
-}
-
 * {
-    /* border: 1px solid black; */
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.first-img {
-    height: 300px;
-    width: auto;
+body {
+    background: linear-gradient(#ef870a, #ffe4c4);
+    background-attachment: fixed;
+    font-family: "Anton", Helvetica, sans-serif;
+    color: #b22222;
+    min-height: 100vh;
 }
 
-h1 {
+.index {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: calc(100vh - 2px);
+}
+
+.index h1 {
+    text-transform: uppercase;
+    font-size: 5em;
+    text-shadow: 0 0 12px #fff, 0 0 26px #b22222;
+    letter-spacing: 18px;
+}
+
+.index .cards {
+    display: flex;
+    gap: 18px;
+}
+
+.index .card {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    background-color:#ef870a;
+    border-radius: 5px;
+    box-shadow:  0 0 6px #000, 0 0 26px #b22222;
+}
+
+.index .card h2 {
+    font-size: 1.2em;
     text-align: center;
-    font-weight: 900;
-    font-size: 60px;
-    padding: 4px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0 0 4px #fff;
 }
 
-h2 {
+.index .card img {
+    border-radius: 12px;
+    max-width: 240px;
+    max-height: 280px;
+    object-fit: cover;
+    transition: 2s;
+    transition-delay: 0.5s;
+}
+
+.index .card img:hover {
+    scale: 1.1;
+    box-shadow: 0 0 12px #000, 0 0 32px #b22222;
+    transition: 2s;
+    transition-delay: 0.3s;
+}
+
+.index .card .text {
+    font-family: sans-serif;
+    font-size: 0.9em;
     font-weight: 800;
-    font-size: 40px;
-    padding: 4px;
+    width: 240px;
+    height: 70px;
+    text-align: justify;
 }
 
-ul, ol, p {
-    font-weight: 600;
-    font-size: 20px;
-    padding: 8px 24px;
+.footer p {
+    font-size: 1em;
 }
 
-ol img {
-    height: 150px;
-}
-
-.novigator ul{
-    list-style-type: none;
-    text-align: center;
-}
-
-.link {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-button {
-    background-color: firebrick;
-    padding: 4px;
-}
-
-a {
-    color: black;
+.footer a {
+    text-decoration: none;
+    color: #b22222;
+    text-transform: uppercase;
 }
