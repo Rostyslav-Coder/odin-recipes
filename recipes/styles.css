@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid #000; */
+}
+
+body {
+    background: linear-gradient(#ef870a, #ffe4c4);
+    background-attachment: fixed;
+    font-family: "Anton", Helvetica, sans-serif;
+    color: #b22222;
+    min-height: 100vh;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    width: 170px;
+    background-color: #b22222;
+}
+
+.header ul {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header li {
+    text-decoration: none;
+    padding: 12px 28px;
+    border-bottom: 2px solid #ffe4c4;
+}
+
+.header a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #ffe4c4;
+}
+
+.header a:hover {
+    scale: 1.05;
+    transition: 1.5s;
+    text-shadow: 0 0 24px #fff;
+}
+
+.recipe {
+    margin: 0 15% 0 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.recipe .logo {
+    margin-top: 25px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.recipe .logo h1 {
+    font-size: 3.5em;
+    text-transform: uppercase;
+    text-shadow: 0 0 12px #fff, 0 0 26px #b22222;
+    letter-spacing: 8px;
+}
+
+.recipe .logo h2 {
+    font-size: 2em;
+    max-width: 600px;
+    text-transform: uppercase;
+    text-shadow: 0 0 12px #fff, 0 0 26px #b22222;
+    letter-spacing: 2px;
+}
+
+.recipe .duble-col {
+    display: flex;
+    gap: 25px;
+}
+
+.recipe .image img {
+    height: 350px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 12px #000, 0 0 32px #b22222;
+}
+
+.right h2,
+.steps h2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-shadow: 0 0 12px #fff, 0 0 26px #b22222;
+    letter-spacing: 2px;    
+}
+
+.right p {
+    font-size: 0.9em;
+    text-align: justify;
+}
+
+.right ul {
+    columns: 2;
+    font-size: 0.9em;
+    list-style-type: none;
+}
+
+.steps ol {
+    margin-left: 20px;
+    font-size: 0.9em;
+}
+
+.steps img {
+    margin: 15px 0;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 12px #000, 0 0 32px #b22222;
+}
