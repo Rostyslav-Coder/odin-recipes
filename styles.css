@@ -1,3 +1,15 @@
+:root {
+    --orange: #ef870a;
+    --biscuit: #ffe4c4;
+    --brick: #b22222;
+    --withe: #fff;
+    --black: #000;
+    --box-dark-shadow: 0 0 8px var(--black), 0 0 16px 8px var(--brick);
+    --text-light-shadow: 0 0 4px var(--withe), 0 0 16px var(--brick);
+
+    font-size: calc(10px + 1vw);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,10 +17,10 @@
 }
 
 body {
-    background: linear-gradient(#ef870a, #ffe4c4);
+    background: linear-gradient(var(--orange), var(--biscuit));
     background-attachment: fixed;
     font-family: "Anton", Helvetica, sans-serif;
-    color: #b22222;
+    color: var(--brick);
     min-height: 100vh;
 }
 
@@ -22,40 +34,39 @@ body {
 
 .index h1 {
     text-transform: uppercase;
-    font-size: 5em;
-    text-shadow: 0 0 12px #fff, 0 0 26px #b22222;
-    letter-spacing: 18px;
+    font-size: 4.2rem;
+    text-shadow: var(--text-light-shadow);
+    letter-spacing: 1rem;
 }
 
 .index .cards {
     display: flex;
-    gap: 18px;
+    gap: 4vw;
 }
 
 .index .card {
     display: flex;
-    width: 300px;
+    width: 340px;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    gap: 12px;
-    background-color:#ef870a;
+    background-color: var(--orange);
     border-radius: 5px;
-    box-shadow:  0 0 6px #000, 0 0 26px #b22222;
+    box-shadow: var(--box-dark-shadow);
 }
 
 .index .card h2 {
-    font-size: 1.2em;
+    font-size: 0.9rem;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 4px;
-    text-shadow: 0 0 4px #fff;
+    text-shadow: var(--text-light-shadow);
 }
 
 .index .card img {
     border-radius: 12px;
     max-width: 240px;
-    max-height: 280px;
+    max-height: 300px;
     object-fit: cover;
     transition: 2s;
     transition-delay: 0.5s;
@@ -63,26 +74,26 @@ body {
 
 .index .card img:hover {
     scale: 1.1;
-    box-shadow: 0 0 12px #000, 0 0 32px #b22222;
+    box-shadow: var(--box-dark-shadow);
     transition: 2s;
     transition-delay: 0.3s;
 }
 
 .index .card .text {
     font-family: sans-serif;
-    font-size: 0.9em;
+    font-size: 0.6rem;
     font-weight: 800;
     width: 240px;
-    height: 70px;
+    height: 80px;
     text-align: justify;
 }
 
 .footer p {
-    font-size: 1em;
+    font-size: 0.8rem;
 }
 
 .footer a {
     text-decoration: none;
-    color: #b22222;
+    color: var(--brick);
     text-transform: uppercase;
 }
