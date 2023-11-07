@@ -1,3 +1,15 @@
+:root {
+    --orange: #ef870a;
+    --biscuit: #ffe4c4;
+    --brick: #b22222;
+    --withe: #fff;
+    --black: #000;
+    --box-dark-shadow: 0 0 8px var(--black), 0 0 16px 8px var(--brick);
+    --text-light-shadow: 0 0 4px var(--withe), 0 0 16px var(--brick);
+
+    font-size: calc(10px + 1vw);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +18,10 @@
 }
 
 body {
-    background: linear-gradient(#ef870a, #ffe4c4);
+    background: linear-gradient(var(--orange), var(--biscuit));
     background-attachment: fixed;
     font-family: "Anton", Helvetica, sans-serif;
-    color: #b22222;
+    color: var(--brick);
     min-height: 100vh;
 }
 
@@ -17,7 +29,7 @@ body {
     position: fixed;
     left: 0;
     width: 170px;
-    background-color: #b22222;
+    background-color: var(--brick);
 }
 
 .header ul {
@@ -36,14 +48,14 @@ body {
     display: block;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 1rem;
     color: #ffe4c4;
 }
 
 .header a:hover {
     scale: 1.05;
     transition: 1.5s;
-    text-shadow: 0 0 24px #fff;
+    text-shadow: var(--text-light-shadow);
 }
 
 .recipe {
@@ -55,7 +67,6 @@ body {
 }
 
 .recipe .logo {
-    margin-top: 25px;
     align-self: center;
     display: flex;
     flex-direction: column;
@@ -64,18 +75,20 @@ body {
 }
 
 .recipe .logo h1 {
-    font-size: 3.5em;
+    font-size: 3rem;
+    line-height: 1.2;
     text-transform: uppercase;
-    text-shadow: 0 0 12px #fff, 0 0 26px #b22222;
-    letter-spacing: 8px;
+    text-shadow: var(--text-light-shadow);
+    letter-spacing: 0.5rem;
 }
 
 .recipe .logo h2 {
-    font-size: 2em;
+    font-size: 1.6rem;
+    line-height: 1.2;
     max-width: 600px;
     text-transform: uppercase;
-    text-shadow: 0 0 12px #fff, 0 0 26px #b22222;
-    letter-spacing: 2px;
+    text-shadow: var(--text-light-shadow);
+    letter-spacing: 0.1rem;
 }
 
 .recipe .duble-col {
@@ -88,31 +101,38 @@ body {
     width: 300px;
     object-fit: cover;
     border-radius: 15px;
-    box-shadow: 0 0 12px #000, 0 0 32px #b22222;
+    box-shadow: var(--box-dark-shadow);
 }
 
 .right h2,
 .steps h2 {
-    font-size: 1.5em;
+    font-size: 1.2rem;
     text-transform: uppercase;
-    text-shadow: 0 0 12px #fff, 0 0 26px #b22222;
-    letter-spacing: 2px;    
+    text-shadow: var(--text-light-shadow);
+    letter-spacing: 3px;
+    margin-top: 10px;    
 }
 
+.desc > h2 {
+    margin-top: 0;
+}
 .right p {
-    font-size: 0.9em;
+    font-size: 0.75rem;
+    line-height: 1.5;
     text-align: justify;
 }
 
 .right ul {
     columns: 2;
-    font-size: 0.9em;
+    font-size: 0.75rem;
+    line-height: 1.5;
     list-style-type: none;
 }
 
 .steps ol {
     margin-left: 20px;
-    font-size: 0.9em;
+    font-size: 0.75rem;
+    line-height: 1.5;
 }
 
 .steps img {
@@ -121,5 +141,5 @@ body {
     width: 250px;
     object-fit: cover;
     border-radius: 5px;
-    box-shadow: 0 0 12px #000, 0 0 32px #b22222;
+    box-shadow: var(--box-dark-shadow);
 }
